@@ -12,7 +12,7 @@ task calculate {
         def num2 = scanner.nextDouble()
         scanner.nextLine()
         println 'Enter operation (add, subtract, multiply, divide):'
-        def operation = scanner.nextLine().toLowerCase()
+        def operation = scanner.nextLine().trim().toLowerCase()
 
         def result = 0
         switch (operation) {
