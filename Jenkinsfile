@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    triggers {
+        // Schedule daily at 10 AM
+        cron('0 10 * * *')
+    }
 
 stages {
     stage('Checkout') {
