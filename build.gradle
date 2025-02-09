@@ -1,5 +1,14 @@
 plugins { 
-    id 'groovy' 
+    id 'groovy'
+    id "org.sonarqube" version "7.0.1.4817"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "gradle-app"
+        property "sonar.host.url", "http://192.168.56.11:9001"
+        property "sonar.login", "squ_26eaf2a23016b96430e3b57677470964299c943a"
+    }
 }
 
 task calculate {
